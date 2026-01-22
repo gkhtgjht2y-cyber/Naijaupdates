@@ -1,0 +1,37 @@
+{
+  "last_updated": "2025-01-15T10:30:00Z",
+  "rates": [
+    {
+      "name": "Official Exchange Rate",
+      "value": "₦799/$",
+      "source": "CBN",
+      "icon": "fas fa-landmark",
+      "description": "Central Bank Official Rate",
+      "updated": "2025-01-15T10:00:00Z"
+    },
+    {
+      "name": "Parallel Market Rate",
+      "value": "₦890/$",
+      "source": "Market",
+      "icon": "fas fa-exchange-alt",
+      "description": "Black Market Rate",
+      "updated": "2025-01-15T10:15:00Z"
+    },
+    {
+      "name": "Euro Exchange Rate",
+      "value": "₦965/€",
+      "source": "CBN",
+      "icon": "fas fa-euro-sign",
+      "description": "Naira to Euro",
+      "updated": "2025-01-15T10:00:00Z"
+    },
+    {
+      "name": "Crude Oil Price",
+      "value": "$87.50",
+      "source": "NNPC",
+      "icon": "fas fa-oil-can",
+      "description": "Brent Crude per barrel",
+      "updated": "2025-01-15T10:20:00Z"
+    }
+  ]
+}
