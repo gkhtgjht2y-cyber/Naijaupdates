@@ -1,0 +1,48 @@
+{
+  "sources": [
+    {
+      "name": "BusinessDay Nigeria",
+      "url": "https://businessday.ng/feed/",
+      "type": "rss",
+      "category": "business"
+    },
+    {
+      "name": "Nairametrics",
+      "url": "https://nairametrics.com/feed/",
+      "type": "rss",
+      "category": "economic_analysis"
+    },
+    {
+      "name": "Premium Times",
+      "url": "https://www.premiumtimesng.com/feed/",
+      "type": "rss",
+      "category": "general"
+    },
+    {
+      "name": "Central Bank of Nigeria",
+      "url": "https://www.cbn.gov.ng",
+      "type": "web",
+      "category": "monetary_policy"
+    },
+    {
+      "name": "National Bureau of Statistics",
+      "url": "https://nigerianstat.gov.ng",
+      "type": "web",
+      "category": "statistics"
+    },
+    {
+      "name": "Google News Nigeria",
+      "url": "https://news.google.com/search?q=nigeria+economy",
+      "type": "aggregated",
+      "category": "news"
+    }
+  ],
+  "update_interval": 7200,
+  "default_indicators": [
+    "inflation_rate",
+    "policy_rate",
+    "exchange_rate",
+    "gdp_growth",
+    "unemployment_rate"
+  ]
+}
