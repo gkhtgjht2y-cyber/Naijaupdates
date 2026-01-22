@@ -1,41 +1,37 @@
 {
-  "last_updated": "2025-01-15T10:30:00Z",
+  "last_updated": "2026-01-15T10:30:00Z",
+  "year": "2026",
   "articles": [
     {
-      "title": "CBN Maintains Interest Rate at 18.75% to Curb Inflation",
-      "url": "https://businessday.ng/cbn-rate-2025/",
-      "summary": "The Central Bank of Nigeria has kept the Monetary Policy Rate unchanged at 18.75% in its latest meeting to combat persistent inflation.",
-      "source": "BusinessDay Nigeria",
+      "title": "CBN Reduces Policy Rate to 17.25% in First 2026 Meeting",
+      "url": "https://businessday.ng/cbn-rate-january-2026/",
+      "summary": "The Central Bank of Nigeria has lowered the Monetary Policy Rate to 17.25% in its January 2026 meeting, marking the first rate cut of the year.",
+      "source": "BusinessDay Nigeria 2026",
       "category": "policy",
-      "published_at": "2025-01-15T09:00:00Z",
-      "keywords": ["CBN", "interest rate", "inflation", "monetary policy"]
+      "published_at": "2026-01-15T09:00:00Z",
+      "keywords": ["CBN", "interest rate", "2026", "monetary policy", "MPC"],
+      "year": "2026"
     },
     {
-      "title": "Nigeria's Inflation Drops to 21.3% in December 2024",
-      "url": "https://nairametrics.com/inflation-dec-2024/",
-      "summary": "The National Bureau of Statistics reports inflation fell to 21.3% in December 2024, down from 21.5% in November.",
-      "source": "Nairametrics",
+      "title": "Inflation Rate Falls to 17.8% in January 2026",
+      "url": "https://nairametrics.com/inflation-january-2026/",
+      "summary": "Nigeria's inflation rate dropped to 17.8% in January 2026, continuing the downward trend that began in late 2025 according to NBS data.",
+      "source": "Nairametrics 2026",
       "category": "economy",
-      "published_at": "2025-01-15T08:30:00Z",
-      "keywords": ["inflation", "NBS", "economy", "prices"]
+      "published_at": "2026-01-14T08:30:00Z",
+      "keywords": ["inflation", "NBS", "2026", "economy", "prices"],
+      "year": "2026"
     },
     {
-      "title": "Naira Stabilizes at ₦890/$ in Parallel Market",
-      "url": "https://www.premiumtimesng.com/naira-stable-2025/",
-      "summary": "The Nigerian naira has stabilized around ₦890 to the US dollar following recent Central Bank interventions in the forex market.",
-      "source": "Premium Times",
+      "title": "Naira Strengthens to ₦820/$ in Parallel Market - January 2026",
+      "url": "https://www.premiumtimesng.com/naira-january-2026/",
+      "summary": "The Nigerian naira has strengthened to ₦820 per US dollar in the parallel market, showing improved forex liquidity in early 2026.",
+      "source": "Premium Times 2026",
       "category": "markets",
-      "published_at": "2025-01-15T08:00:00Z",
-      "keywords": ["naira", "exchange rate", "forex", "currency"]
+      "published_at": "2026-01-14T08:00:00Z",
+      "keywords": ["naira", "exchange rate", "2026", "forex", "currency"],
+      "year": "2026"
     },
     {
-      "title": "NNPC Reports $2.8 Billion Oil Revenue for January 2025",
-      "url": "https://www.thecable.ng/nnpc-revenue-jan-2025/",
-      "summary": "The Nigerian National Petroleum Corporation announced $2.8 billion in oil revenue for January 2025, showing recovery in the sector.",
-      "source": "The Cable",
-      "category": "business",
-      "published_at": "2025-01-15T07:45:00Z",
-      "keywords": ["NNPC", "oil", "revenue", "petroleum"]
-    }
-  ]
-}
+      "title": "GDP Growth Projected at 3.2% for 2026 - IMF Report",
+      "url": "https://www
