@@ -1,0 +1,35 @@
+{
+  "last_updated": "2025-01-15T10:30:00Z",
+  "sources": [
+    {
+      "name": "BusinessDay Nigeria",
+      "type": "RSS Feed",
+      "status": "active",
+      "description": "Leading Nigerian business newspaper"
+    },
+    {
+      "name": "Nairametrics",
+      "type": "RSS Feed",
+      "status": "active",
+      "description": "Economic and financial analysis"
+    },
+    {
+      "name": "Premium Times",
+      "type": "RSS Feed",
+      "status": "active",
+      "description": "Investigative journalism"
+    },
+    {
+      "name": "Central Bank of Nigeria",
+      "type": "Web Source",
+      "status": "active",
+      "description": "Official central bank data"
+    },
+    {
+      "name": "National Bureau of Statistics",
+      "type": "Web Source",
+      "status": "active",
+      "description": "Official economic statistics"
+    }
+  ]
+}
