@@ -1,0 +1,37 @@
+{
+  "last_updated": "2025-01-15T10:30:00Z",
+  "indicators": [
+    {
+      "name": "Inflation Rate",
+      "value": "21.3%",
+      "source": "NBS",
+      "icon": "fas fa-chart-line",
+      "updated": "2025-01-15T10:00:00Z",
+      "change": -0.2
+    },
+    {
+      "name": "Policy Rate (MPR)",
+      "value": "18.75%",
+      "source": "CBN",
+      "icon": "fas fa-percentage",
+      "updated": "2025-01-15T09:30:00Z",
+      "change": 0.0
+    },
+    {
+      "name": "GDP Growth",
+      "value": "2.7%",
+      "source": "NBS",
+      "icon": "fas fa-chart-bar",
+      "updated": "2025-01-15T10:00:00Z",
+      "change": 0.1
+    },
+    {
+      "name": "Unemployment Rate",
+      "value": "4.2%",
+      "source": "NBS",
+      "icon": "fas fa-users",
+      "updated": "2025-01-15T10:00:00Z",
+      "change": -0.1
+    }
+  ]
+}
