@@ -1,53 +1,186 @@
-#!/usr/bin/env python3
-"""
-Verify news data is current
-"""
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>🇳🇬 Nigeria Economic Dashboard 2026</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🇳🇬</text></svg>">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <div class="header-content">
+                <div class="logo">
+                    <h1><i class="fas fa-chart-line"></i> Nigeria Economic Dashboard 2026</h1>
+                    <p class="subtitle">Real-time economic indicators, news & analysis for 2026</p>
+                </div>
+                <div class="header-actions">
+                    <div class="year-badge">
+                        <span>2026</span>
+                    </div>
+                    <button id="refreshBtn" class="btn btn-primary">
+                        <i class="fas fa-sync-alt"></i> Refresh Data
+                    </button>
+                    <div class="update-time">
+                        <i class="far fa-clock"></i>
+                        <span id="lastUpdate">Live Data - 2026</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
 
-import json
-import datetime
-import sys
+    <!-- Main Dashboard -->
+    <main class="container">
+        <!-- Yearly Overview -->
+        <section class="year-overview">
+            <div class="overview-card">
+                <h3><i class="fas fa-calendar-alt"></i> 2026 Economic Outlook</h3>
+                <p>Nigeria's economy shows signs of recovery with improved indicators across key sectors in 2026.</p>
+                <div class="outlook-metrics">
+                    <div class="metric">
+                        <span class="metric-label">Projected Growth:</span>
+                        <span class="metric-value positive">3.2%</span>
+                    </div>
+                    <div class="metric">
+                        <span class="metric-label">Inflation Target:</span>
+                        <span class="metric-value">15-18%</span>
+                    </div>
+                    <div class="metric">
+                        <span class="metric-label">Fiscal Outlook:</span>
+                        <span class="metric-value positive">Stable</span>
+                    </div>
+                </div>
+            </div>
+        </section>
 
-def verify_data():
-    """Check data freshness"""
-    try:
-        with open("api/news.json", "r") as f:
-            data = json.load(f)
-        
-        # Check last updated
-        last_updated = data.get("last_updated", "")
-        if not last_updated:
-            return False
-        
-        # Check year
-        if "2025" not in last_updated:
-            print("❌ Data not from 2025")
-            return False
-        
-        # Check articles
-        articles = data.get("articles", [])
-        if len(articles) < 3:
-            print("❌ Too few articles")
-            return False
-        
-        # Check article dates
-        current_year = str(datetime.datetime.utcnow().year)
-        for article in articles[:5]:
-            if current_year not in article.get("published_at", ""):
-                print("❌ Article not from current year")
-                return False
-        
-        print("✅ Data verification passed")
-        print(f"📅 Last updated: {last_updated[:10]}")
-        print(f"📰 Articles: {len(articles)}")
-        
-        return True
-        
-    except Exception as e:
-        print(f"❌ Error: {e}")
-        return False
+        <!-- Economic Indicators Section -->
+        <section class="indicators-section">
+            <h2><i class="fas fa-chart-bar"></i> 2026 Economic Indicators</h2>
+            <div class="indicators-grid" id="indicatorsGrid">
+                <!-- Indicators will be loaded here -->
+                <div class="indicator-card loading">
+                    <div class="indicator-icon">
+                        <i class="fas fa-percentage"></i>
+                    </div>
+                    <div class="indicator-content">
+                        <h3>Inflation Rate (2026)</h3>
+                        <p class="indicator-value">Loading...</p>
+                        <p class="indicator-source">NBS 2026 Data</p>
+                    </div>
+                </div>
+            </div>
+        </section>
 
-if __name__ == "__main__":
-    if verify_data():
-        sys.exit(0)
-    else:
-        sys.exit(1)
+        <!-- Currency & Market Rates -->
+        <section class="rates-section">
+            <h2><i class="fas fa-money-bill-wave"></i> 2026 Currency & Market Rates</h2>
+            <div class="rates-grid" id="ratesGrid">
+                <!-- Rates will be loaded here -->
+            </div>
+        </section>
+
+        <!-- Latest News Section -->
+        <section class="news-section">
+            <div class="section-header">
+                <h2><i class="fas fa-newspaper"></i> 2026 Economic News</h2>
+                <div class="news-controls">
+                    <select id="newsSourceFilter" class="filter-select">
+                        <option value="all">All Sources</option>
+                    </select>
+                    <select id="newsCategoryFilter" class="filter-select">
+                        <option value="all">All Categories</option>
+                        <option value="economy">Economy 2026</option>
+                        <option value="business">Business 2026</option>
+                        <option value="policy">Policy 2026</option>
+                        <option value="markets">Markets 2026</option>
+                    </select>
+                    <div class="year-filter">
+                        <span class="filter-label">Year:</span>
+                        <div class="year-tag active">2026</div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="news-container">
+                <div id="newsLoading" class="loading-state">
+                    <div class="spinner"></div>
+                    <p>Loading 2026 news updates...</p>
+                </div>
+                <div id="newsGrid" class="news-grid">
+                    <!-- News articles will be loaded here -->
+                </div>
+                <div id="noNews" class="no-results" style="display: none;">
+                    <i class="fas fa-inbox"></i>
+                    <h3>No 2026 news articles found</h3>
+                    <p>Try refreshing or check back later for updates</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Sources & Updates -->
+        <section class="info-section">
+            <div class="info-grid">
+                <div class="info-card">
+                    <h3><i class="fas fa-satellite-dish"></i> 2026 Data Sources</h3>
+                    <ul id="sourcesList" class="sources-list">
+                        <li>Loading 2026 sources...</li>
+                    </ul>
+                </div>
+                <div class="info-card">
+                    <h3><i class="fas fa-info-circle"></i> About 2026 Dashboard</h3>
+                    <p>This dashboard provides real-time Nigerian economic data, news, and indicators for 2026 from trusted sources.</p>
+                    <p class="update-info">2026 data updates every 2 hours automatically.</p>
+                    <div class="year-progress">
+                        <div class="progress-label">2026 Progress</div>
+                        <div class="progress-bar">
+                            <div class="progress-fill" style="width: 15%"></div>
+                        </div>
+                        <div class="progress-text">Q1 2026</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <p>
+                    <strong>Nigeria Economic Dashboard 2026</strong> • 
+                    <span id="articleCount">0</span> 2026 articles • 
+                    <span id="indicatorCount">0</span> 2026 indicators • 
+                    Updated: <span id="updateTimestamp">--:--</span>
+                </p>
+                <p class="footer-links">
+                    <a href="https://github.com" target="_blank" rel="noopener">
+                        <i class="fab fa-github"></i> View on GitHub
+                    </a>
+                    •
+                    <a href="#" id="exportBtn">
+                        <i class="fas fa-download"></i> Export 2026 Data
+                    </a>
+                    •
+                    <a href="#" id="bookmarkBtn">
+                        <i class="far fa-bookmark"></i> Bookmark 2026
+                    </a>
+                </p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <script src="app.js"></script>
+    
+    <script>
+        // Initialize dashboard
+        document.addEventListener('DOMContentLoaded', function() {
+            Dashboard2026.init();
+        });
+    </script>
+</body>
+</html>
