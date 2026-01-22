@@ -1,0 +1,41 @@
+{
+  "last_updated": "2025-01-15T10:30:00Z",
+  "articles": [
+    {
+      "title": "CBN Maintains Interest Rate at 18.75% to Curb Inflation",
+      "url": "https://businessday.ng/cbn-rate-2025/",
+      "summary": "The Central Bank of Nigeria has kept the Monetary Policy Rate unchanged at 18.75% in its latest meeting to combat persistent inflation.",
+      "source": "BusinessDay Nigeria",
+      "category": "policy",
+      "published_at": "2025-01-15T09:00:00Z",
+      "keywords": ["CBN", "interest rate", "inflation", "monetary policy"]
+    },
+    {
+      "title": "Nigeria's Inflation Drops to 21.3% in December 2024",
+      "url": "https://nairametrics.com/inflation-dec-2024/",
+      "summary": "The National Bureau of Statistics reports inflation fell to 21.3% in December 2024, down from 21.5% in November.",
+      "source": "Nairametrics",
+      "category": "economy",
+      "published_at": "2025-01-15T08:30:00Z",
+      "keywords": ["inflation", "NBS", "economy", "prices"]
+    },
+    {
+      "title": "Naira Stabilizes at ₦890/$ in Parallel Market",
+      "url": "https://www.premiumtimesng.com/naira-stable-2025/",
+      "summary": "The Nigerian naira has stabilized around ₦890 to the US dollar following recent Central Bank interventions in the forex market.",
+      "source": "Premium Times",
+      "category": "markets",
+      "published_at": "2025-01-15T08:00:00Z",
+      "keywords": ["naira", "exchange rate", "forex", "currency"]
+    },
+    {
+      "title": "NNPC Reports $2.8 Billion Oil Revenue for January 2025",
+      "url": "https://www.thecable.ng/nnpc-revenue-jan-2025/",
+      "summary": "The Nigerian National Petroleum Corporation announced $2.8 billion in oil revenue for January 2025, showing recovery in the sector.",
+      "source": "The Cable",
+      "category": "business",
+      "published_at": "2025-01-15T07:45:00Z",
+      "keywords": ["NNPC", "oil", "revenue", "petroleum"]
+    }
+  ]
+}
